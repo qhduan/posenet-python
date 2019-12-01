@@ -1,3 +1,17 @@
+#
+
+qhduan:
+
+对原作者的程序做了简单封装
+
+usage:
+
+默认会转换当前目录的images目录的文件的所有.jpg文件到当前目录的output文件夹
+
+```
+docker run -it --rm -v $(pwd)/tmp:/tmp qhduan/posenet:latest python image_demo.py
+```
+
 ## PoseNet Python
 
 This repository contains a pure Python implementation (multi-pose only) of the Google TensorFlow.js Posenet model. For a (slightly faster) PyTorch implementation that followed from this, see (https://github.com/rwightman/posenet-pytorch)
